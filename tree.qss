@@ -1,0 +1,32 @@
+QTreeView::branch:has-siblings:!adjoins-item {border-image: url(:/icon/line(1).svg);}
+QTreeView::branch:has-siblings:adjoins-item {border-image: url(:/icon/line.svg);}
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {border-image: url(:/icon/line(2).svg);}
+
+/*勾选*/
+QTreeView QPushButton[state="0"]{ left:10px; width:16px;height:16px ; image: url(:/icon/on_high.svg)}
+/*下拉*/
+QTreeView QPushButton[state="1"]{ width:16px;height:16px ; image: url(:/icon/more_nor.svg);}
+
+QTreeView  QLabel[state="0"] { min-width:16px;height:16px;  image: url(:/icon/horizontal(1).svg);}
+
+QTreeView  QLabel[state="1"] {  min-width:16px;height:16px;   image: url(:/icon/vertical.svg);}
+
+QTreeView QLineEdit{width: 20px; border :none; width:30px;}
+
+QTreeView QLabel{
+    color: rgb(255,255,255)
+}
+QTreeView QLineEdit{
+    background: transparent;
+    color: rgb(119,119,119)
+}
+
+QTreeView::item {
+     height: 24px;
+     background-color: transparent;
+
+}
+
+QTreeView {
+  background-color: rgb(34,34,34);
+}
